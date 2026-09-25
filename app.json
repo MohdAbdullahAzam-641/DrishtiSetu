@@ -1,0 +1,107 @@
+{
+  "name": "DrishtiSetu — SIH26015 Geospatial Workbench",
+  "short_name": "DrishtiSetu",
+  "framework": "react",
+  "description": "React 18 + TypeScript + Vite Geospatial Fusion & Interpretation Workbench bridging SRISHTI satellite layers and DRISHTI geo-coded field photos for watershed development monitoring (Smart India Hackathon 2026 - Problem Statement SIH26015).",
+  "keywords": [
+    "React",
+    "React 18",
+    "TypeScript",
+    "Vite",
+    "Tailwind CSS",
+    "React Router",
+    "React-Leaflet",
+    "SIH26015",
+    "Smart India Hackathon",
+    "DrishtiSetu",
+    "SRISHTI",
+    "DRISHTI",
+    "Bhuvan",
+    "NRSC",
+    "DoLR",
+    "WDC-PMKSY",
+    "GIS",
+    "Watershed",
+    "Leaflet",
+    "Turf.js"
+  ],
+  "website": "https://drishtisetu-sih26015.vercel.app",
+  "repository": "https://github.com/pixelmob/DrishtiSetu",
+  "success_url": "/",
+  "stack": "heroku-22",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "react": {
+    "version": "18.3.1",
+    "domVersion": "18.3.1",
+    "router": "react-router-dom@6.28.0",
+    "mapLibrary": "react-leaflet@4.2.1",
+    "chartLibrary": "recharts@2.13.3",
+    "bundler": "vite@5.4.11",
+    "language": "TypeScript",
+    "entryPoint": "src/main.tsx",
+    "rootComponent": "src/App.tsx"
+  },
+  "expo": {
+    "name": "DrishtiSetu",
+    "slug": "drishtisetu-sih26015",
+    "version": "1.0.0",
+    "platforms": ["web"],
+    "web": {
+      "bundler": "vite",
+      "output": "single",
+      "favicon": "./public/favicon.svg"
+    }
+  },
+  "scripts": {
+    "postdeploy": "npm run build"
+  },
+  "env": {
+    "NODE_ENV": {
+      "description": "Environment mode for React + Vite build and preview server",
+      "value": "production"
+    },
+    "PORT": {
+      "description": "Port on which the React preview server listens",
+      "value": "5173",
+      "required": false
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "metadata": {
+    "problemStatementId": "SIH26015",
+    "problemStatementTitle": "Application of Geospatial Techniques for Visualization and Analysis to Interpret Geo-Coded Images to Enhance Watershed Development Outcomes",
+    "teamName": "Pixelmob",
+    "teamId": "TM-SIH26-PXL09",
+    "techStack": [
+      "React 18.3",
+      "TypeScript 5.6",
+      "Vite 5.4",
+      "Tailwind CSS 3.4",
+      "React Router 6.28",
+      "Leaflet & React-Leaflet",
+      "Turf.js",
+      "Recharts",
+      "Framer Motion"
+    ],
+    "referenceGeography": "Bundelkhand (Uttar Pradesh & Madhya Pradesh)",
+    "prototypeMode": "Simulated SRISHTI/DRISHTI Data (Frontend-Only Deterministic Engine)",
+    "routes": [
+      "/",
+      "/explorer",
+      "/watershed/:id",
+      "/dashboard",
+      "/how-it-works",
+      "/impact",
+      "/technical-document"
+    ]
+  }
+}
